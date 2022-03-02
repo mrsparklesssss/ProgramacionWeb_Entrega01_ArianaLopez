@@ -1,0 +1,154 @@
+$colorFondo: #1C191A;
+$colorFondoSec:#F14902;
+$colorFondoTer: #242B34;
+$fontFamilyTitulo: 'Archivo Black', sans-serif;
+$fontFamilySubtitulo: 'Open Sans', sans-serif;
+$colorText: #F6E7D8;
+$colorText2: #F4B324;
+
+:root{
+    background-color: $colorFondo;
+    font-family: $fontFamilyTitulo;
+    font-family: $fontFamilySubtitulo;
+    color: $colorText;
+    color: $colorText2;
+
+}
+
+//Declaracion de mixin
+@mixin setFlex ($flexDir, $alig) {
+    display: flex;
+    flex-direction: $flexDir; //row;
+    flex-wrap: wrap;
+    justify-content: $alig; //space-around;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: $colorFondo;
+}
+
+header{
+    background-color: $colorFondoSec;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    text-align: center;
+
+    h1{
+        color: $colorText;
+        font-family: $fontFamilyTitulo;
+    }
+}
+
+.mainMenu{
+    background-color: $colorFondoTer;
+
+    ul{
+        @include setFlex(row, space-around);
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+
+        a{
+            color: $colorText;
+            font-size: 0.8rem;
+
+            &:hover{
+                color:$colorFondoSec;
+            }
+        }
+    }
+}
+
+.mainSection{
+    background-color: $colorFondoTer;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 10px;
+
+    h1{
+        color: $colorText2;
+    }
+
+    .dsp{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        p{
+            color: $colorText;
+            font-size: 15px;
+            margin-right: 4%;
+        }
+    }
+
+    .menuDet{
+        
+        ul{
+            @include setFlex(row, start);
+
+            a{
+                color: $colorText;
+                font-weight: bolder;
+                font-size: 13px;
+                background-color: $colorFondoSec;
+
+                padding: 0.6rem 1.5rem;
+                margin-right: 3rem;
+                border-radius: 10px;
+
+                &:hover{
+                    background-color: #F4B324;
+                    color: $colorFondo;
+                }
+            }
+        }
+    }
+
+    .imgMenu{
+        display: flex;
+        flex-direction: column;
+
+        ul{
+            @include setFlex(row, space-around);
+
+            a{
+                color: $colorText2;
+                font-weight: bolder;
+                margin-left: 2rem;
+                margin-right: 2rem;
+
+                &:hover{
+                    color: $colorFondoSec;
+                }
+            }
+        }
+    }
+
+    .imagenDsp{
+
+        img{
+            height: 300px;
+            margin-top: 1rem;
+
+            border-top-left-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+        }
+    }
+}
+

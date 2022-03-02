@@ -1,0 +1,171 @@
+:root {
+  background-color: #1C191A;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #F6E7D8;
+  color: #F4B324;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #1C191A;
+}
+
+header {
+  background-color: #F14902;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  text-align: center;
+}
+
+header h1 {
+  color: #F6E7D8;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.mainMenu {
+  background-color: #242B34;
+}
+
+.mainMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.mainMenu ul a {
+  color: #F6E7D8;
+  font-size: 0.8rem;
+}
+
+.mainMenu ul a:hover {
+  color: #F14902;
+}
+
+.mainSection {
+  background-color: #242B34;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  border-radius: 10px;
+}
+
+.mainSection h1 {
+  color: #F4B324;
+}
+
+.mainSection .dsp {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mainSection .dsp p {
+  color: #F6E7D8;
+  font-size: 15px;
+  margin-right: 4%;
+}
+
+.mainSection .menuDet ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.mainSection .menuDet ul a {
+  color: #F6E7D8;
+  font-weight: bolder;
+  font-size: 13px;
+  background-color: #F14902;
+  padding: 0.6rem 1.5rem;
+  margin-right: 3rem;
+  border-radius: 10px;
+}
+
+.mainSection .menuDet ul a:hover {
+  background-color: #F4B324;
+  color: #1C191A;
+}
+
+.mainSection .imgMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainSection .imgMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainSection .imgMenu ul a {
+  color: #F4B324;
+  font-weight: bolder;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mainSection .imgMenu ul a:hover {
+  color: #F14902;
+}
+
+.mainSection .imagenDsp img {
+  height: 300px;
+  margin-top: 1rem;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+/*# sourceMappingURL=main.css.map */
